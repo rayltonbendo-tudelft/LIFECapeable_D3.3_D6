@@ -14,6 +14,9 @@ Hourly wave data were obtained from the hindcast model managed by Lund Universit
   
 Hourly water level data were retrieved from the open-access Swedish Meteorological and Hydrological Institute ([SMHI](https://www.smhi.se/nyhetsarkiv)) database, using records from the station located in Ystad (Lat: 425094m - Long: 6141800m) for this study.
 
+Reference: Adell, A., Almström, B., Kroon, A., Larson, M., Bertacchi Uvo, C., Hallin, C. (2023). Spatial and temporal wave climate variability along the south coast of Sweden during 1959–2021. 
+Regional Studies in Marine Science, 63. https://doi.org/10.1016/j.rsma.2023.103011.
+
 ### Extreme Value Analysis and Wave Simulations
 For each storm direction, both univariate and multivariate extreme value analyses were performed to determine the boundary conditions (wave parameters and water level) required for the wave simulations. 
 These simulations were performed using SWAN, an open-access numerical wave model.
@@ -34,8 +37,6 @@ See the file "LIFECapeable-DleiverableD3.3-Significant wave height and water lev
 - "OR" scenario: Represents the joint exceedance probability where either wave height, water level, or both exceed their respective univariate thresholds. This scenario is less conservative than the "AND" scenario, accounting for cases where a single variable dominates extreme conditions.
 
 The results cover seven return periods and 236 points along the coastal protection structures, spaced approximately 100 meters apart; At each point, three extreme wave climate and water level values are computed, each corresponding to one of the three simulated storm directions. The final dataset is constructed by selecting, for each point, the extreme condition that produced the highest wave height among the three storm directions. Once the dominant storm direction is identified, the associated wave period, wave direction, and water level are also selected to characterize the conditions at that location along the seawall.
-
-
 
 ### Repository structure
 The code consists of the following files and directories:
