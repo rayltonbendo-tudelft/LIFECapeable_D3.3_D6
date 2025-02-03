@@ -27,11 +27,15 @@ The final dataset provides wave climate parameters—significant wave height (Hm
 - Multivariate "OR" scenario
 - Multivariate "AND" scenario
 
+See the file "LIFECapeable-DleiverableD3.3-Significant wave height and water levels at the toe of the dike.csv" for more details on the result.
+
 ### Scenario Definitions
 - "AND" scenario: Represents the joint exceedance probability where both wave height and water level exceed their respective univariate thresholds.
 - "OR" scenario: Represents the joint exceedance probability where either wave height, water level, or both exceed their respective univariate thresholds. This scenario is less conservative than the "AND" scenario, accounting for cases where a single variable dominates extreme conditions.
 
-The results cover seven return periods and 236 points along the levees, spaced approximately 100 meters apart; At each point, three extreme wave climate and water level values are computed, each corresponding to one of the three simulated storm directions. The final dataset is constructed by selecting, for each point, the extreme condition that produced the highest wave height among the three storm directions. Once the dominant storm direction is identified, the associated wave period, wave direction, and water level are also selected to characterize the conditions at that location along the seawall.
+The results cover seven return periods and 236 points along the coastal protection structures, spaced approximately 100 meters apart; At each point, three extreme wave climate and water level values are computed, each corresponding to one of the three simulated storm directions. The final dataset is constructed by selecting, for each point, the extreme condition that produced the highest wave height among the three storm directions. Once the dominant storm direction is identified, the associated wave period, wave direction, and water level are also selected to characterize the conditions at that location along the seawall.
+
+
 
 ### Repository structure
 The code consists of the following files and directories:
