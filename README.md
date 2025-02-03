@@ -4,7 +4,7 @@ This repository contains the codes for the reproduction of the uni- and multivar
 > " Data set with simulated wave heights and water levels at the toe of the dike that will be used for the preparatory wave impact test and field experiment. The uni- and multivariate extreme value analysis of Hs and SWL will be carried out using open access programming languages, e.g., Python and/or R, and the script will be made publicly available on GitHub for reproducibility."
 
 ## Background and Methodology
-This repository provides an overview of the steps taken to define the wave and water level conditions at the toe of the dike. All the coordinates used in this work are expressed according to the Swedish naitonal reference systems: EPSG:3006 - SWEREF99 TM for the coordinates and the RH2000 for the vertical datum.
+This repository provides an overview of the steps taken to define the wave and water level conditions at the toe of the dike. All the coordinates used in this work are expressed according to the Swedish national reference systems: EPSG:3006 - SWEREF99 TM for the coordinates and the RH2000 for the vertical datum.
 
 ### Data Collection
 Hourly wave data were obtained from the hindcast model managed by the University of Lund (Adell et al., 2023). Specifically:
@@ -21,19 +21,19 @@ These simulations were performed using SWAN, an open-access numerical wave model
 In the monovariate analysis, the wave and water level conditions were considered completely uncorrelated events; this means that for a given return period (e.g. 100 years), the 100-year wave conditions and the 100-year water level were assumed to occur simultaneously, although their actual correlation may be different.
 
 ## Results and Dataset Structure
-The final dataset provides wave climate parameters (Hm0, Tp and direction) and water depth along the dike perimeter, categorized into three scenarios:
+The final dataset provides wave climate parameters—significant wave height (Hm0), peak period (Tp), and wave direction—along with water depth along the dike perimeter. The data is categorized into three scenarios:
+
 - Monovariate analysis 
 - Multivariate "OR" scenario
 - Multivariate "AND" scenario
-  
-"AND" scenario: This case represents the joint exceedance probability of wave height and water level being higher than their respective univariate thresholds.
-"OR" scenario: This case represents the joint exceedance probability of either wave height or water level or both being greater than their respective univariate thresholds.
-The "OR" scenario is less conservative than the "AND" scenario and takes into account cases where one variable dominates the extreme conditions.
-The results are presented for seven return periods and 236 points along the levees, spaced approximately 100 meters apart. See the example image for the 100-year return period. 
-At each point, three extreme wave climates and water level values are calculated, each corresponding to one of the three simulated storm directions.
-The final dataset is constructed by selecting, for each point, the extreme condition that produced the highest wave height among the three possible storm directions. Once the storm direction producing the largest wave height has been identified, the associated wave period, wave direction, and water level are also selected and used to characterize each point along the seawall.
 
-## Repository structure
+### Scenario Definitions
+- "AND" scenario: Represents the joint exceedance probability where both wave height and water level exceed their respective univariate thresholds.
+- "OR" scenario: Represents the joint exceedance probability where either wave height, water level, or both exceed their respective univariate thresholds. This scenario is less conservative than the "AND" scenario, accounting for cases where a single variable dominates extreme conditions.
+
+The results cover seven return periods and 236 points along the levees, spaced approximately 100 meters apart; At each point, three extreme wave climate and water level values are computed, each corresponding to one of the three simulated storm directions. The final dataset is constructed by selecting, for each point, the extreme condition that produced the highest wave height among the three storm directions. Once the dominant storm direction is identified, the associated wave period, wave direction, and water level are also selected to characterize the conditions at that location along the seawall.
+
+### Repository structure
 The code consists of the following files and directories:
 - **Database**: 
   - Data_Falsterbo10195_YSTAD.csv: data from model extraction point 10195, located on the west side of the Falsterbo peninsula and Ystad water level data 
