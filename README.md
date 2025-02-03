@@ -8,8 +8,10 @@ This repository provides an overview of the steps taken to define the wave and w
 
 ### Data Collection
 Hourly wave data were obtained from the hindcast model managed by the University of Lund (Adell et al., 2023). Specifically:
-     - Data from model extraction point 10195 (Lat: 353285m- Long: 6141052m), located on the west side of the Falsterbo peninsula, were used to characterize northern storms.
-     - Data from model extraction point 10958 (Lat: 367538m- Long: 6129815m), located south of the Falsterbo peninsula, were used to describe south-eastern and south-western storms.
+
+- Data from model extraction point 10195 (Lat: 353285m- Long: 6141052m), located on the west side of the Falsterbo peninsula, were used to characterize northern storms.
+- Data from model extraction point 10958 (Lat: 367538m- Long: 6129815m), located south of the Falsterbo peninsula, were used to describe south-eastern and south-western storms.
+  
 Hourly water level data were retrieved from the open-access Swedish Meteorological and Hydrological Institute ([SMHI](https://www.smhi.se/nyhetsarkiv)) database, using records from the station located in Ystad (Lat: 425094m - Long: 6141800m) for this study.
 
 ### Extreme Value Analysis and Wave Simulations
@@ -23,6 +25,7 @@ The final dataset provides wave climate parameters (Hm0, Tp and direction) and w
 - Monovariate analysis 
 - Multivariate "OR" scenario
 - Multivariate "AND" scenario
+  
 "AND" scenario: This case represents the joint exceedance probability of wave height and water level being higher than their respective univariate thresholds.
 "OR" scenario: This case represents the joint exceedance probability of either wave height or water level or both being greater than their respective univariate thresholds.
 The "OR" scenario is less conservative than the "AND" scenario and takes into account cases where one variable dominates the extreme conditions.
