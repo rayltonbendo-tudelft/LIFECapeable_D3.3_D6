@@ -7,7 +7,7 @@ This repository contains the codes for the reproduction of the uni- and multivar
 This repository provides an overview of the steps taken to define the wave and water level conditions at the toe of the dike. All the coordinates used in this work are expressed according to the Swedish national reference systems: EPSG:3006 - SWEREF99 TM for the coordinates and the RH2000 for the vertical datum.
 
 ### Data Collection
-Hourly wave data were obtained from the hindcast model managed by the University of Lund (Adell et al., 2023). Specifically:
+Hourly wave data were obtained from the hindcast model managed by Lund University (Adell et al., 2023). Specifically:
 
 - Data from model extraction point 10195 (Lat: 353285m- Long: 6141052m), located on the west side of the Falsterbo peninsula, were used to characterize northern storms.
 - Data from model extraction point 10958 (Lat: 367538m- Long: 6129815m), located south of the Falsterbo peninsula, were used to describe south-eastern and south-western storms.
