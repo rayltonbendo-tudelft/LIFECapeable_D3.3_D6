@@ -40,7 +40,7 @@ The results cover seven return periods and 236 points along the coastal protecti
 
 ### Repository structure
 The code consists of the following files and directories:
-- **Database**: 
+- **Data.rar**: a folder containing the wave and water level data 
   - Data_Falsterbo10195_YSTAD.csv: data from model extraction point 10195, located on the west side of the Falsterbo peninsula and Ystad water level data 
   - Data_Falsterbo10958_YSTAD.csv: data from model extraction point 10958, located on the south side of the Falsterbo peninsula and Ystad water level data 
     
