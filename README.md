@@ -14,8 +14,6 @@ Hourly wave data were obtained from the hindcast model managed by the University
   
 Hourly water level data were retrieved from the open-access Swedish Meteorological and Hydrological Institute ([SMHI](https://www.smhi.se/nyhetsarkiv)) database, using records from the station located in Ystad (Lat: 425094m - Long: 6141800m) for this study.
 
-For reproducibility you can access [Data](https://tud365-my.sharepoint.com/:f:/r/personal/rrodriguesbend_tudelft_nl/Documents/Documents/Projects/NL-B-2405-LIFECAPEable-PhD_TUDelft/35_Deliverables/D1-WP03/Data?csf=1&web=1&e=b7p9uH). 
-
 ### Extreme Value Analysis and Wave Simulations
 For each storm direction, both univariate and multivariate extreme value analyses were performed to determine the boundary conditions (wave parameters and water level) required for the wave simulations. 
 These simulations were performed using SWAN, an open-access numerical wave model.
